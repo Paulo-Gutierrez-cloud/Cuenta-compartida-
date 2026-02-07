@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+    --color-card: hsl(var(--card));
+    --color-ring: hsl(var(--ring));
+    --color-input: hsl(var(--input));
+    --color-muted: hsl(var(--muted));
+    --color-accent: hsl(var(--accent));
+    --color-border: hsl(var(--border));
+    --color-radius: var(--radius);
+    --color-popover: hsl(var(--popover));
+    --color-primary: hsl(var(--primary));
+    --color-secondary: hsl(var(--secondary));
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
+    --color-destructive: hsl(var(--destructive));
+    --color-card-foreground: hsl(var(--card-foreground));
+    --color-muted-foreground: hsl(var(--muted-foreground));
+    --color-accent-foreground: hsl(var(--accent-foreground));
+    --color-popover-foreground: hsl(var(--popover-foreground));
+    --color-primary-foreground: hsl(var(--primary-foreground));
+    --color-secondary-foreground: hsl(var(--secondary-foreground));
+    --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+/* 
+  Define the actual values for the variables.
+  Note: I am removing the HSL wrapping here so variables just hold the channels,
+  and the @theme maps them with hsl().
+*/
+:root {
+    --card: 0 0% 100%;
+    --ring: 255 83% 52%;
+    --input: 240 10% 84%;
+    --muted: 240 5% 97%;
+    --accent: 42 100% 60%;
+    --border: 240 10% 84%;
+    --radius: 0.5rem;
+    --popover: 0 0% 100%;
+    --primary: 255 83% 52%;
+    --secondary: 240 5% 97%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 8%;
+    --destructive: 345 90% 60%;
+    --card-foreground: 240 10% 8%;
+    --muted-foreground: 240 12% 48%;
+    --accent-foreground: 240 10% 8%;
+    --popover-foreground: 240 10% 8%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 240 12% 48%;
+    --destructive-foreground: 0 0% 100%;
+}
+
+.dark {
+    --card: 0 0% 10%;
+    --ring: 42 100% 60%;
+    --input: 240 12% 28%;
+    --muted: 0 0% 10%;
+    --accent: 42 100% 60%;
+    --border: 240 12% 28%;
+    --popover: 0 0% 10%;
+    --primary: 255 79% 60%;
+    --secondary: 0 0% 10%;
+    --background: 240 10% 8%;
+    --foreground: 240 5% 92%;
+    --destructive: 345 90% 60%;
+    --card-foreground: 240 5% 92%;
+    --muted-foreground: 240 12% 48%;
+    --accent-foreground: 240 10% 8%;
+    --popover-foreground: 240 5% 92%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 100%;
+}
+
+@keyframes accordion-down {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: var(--radix-accordion-content-height);
+    }
+}
+
+@keyframes accordion-up {
+    from {
+        height: var(--radix-accordion-content-height);
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+/* Global resets usually handled by Preflight, but we enforce body here */
+body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+}

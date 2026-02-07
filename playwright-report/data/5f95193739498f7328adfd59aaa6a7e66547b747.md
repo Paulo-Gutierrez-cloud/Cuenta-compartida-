@@ -1,0 +1,123 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - heading "PC CENTRAL" [level=1] [ref=e5]:
+          - img [ref=e6]
+          - text: PC CENTRAL
+        - paragraph [ref=e11]: Monitoreo de Operaciones
+      - generic [ref=e12]:
+        - link "VISTA COCINA" [ref=e13] [cursor=pointer]:
+          - /url: /kitchen
+          - img [ref=e14]
+          - text: VISTA COCINA
+        - link "MESA QRS" [ref=e16] [cursor=pointer]:
+          - /url: /qr
+          - img [ref=e17]
+          - text: MESA QRS
+    - generic [ref=e23]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - paragraph [ref=e28]: Identificador
+            - heading "Mesa 1" [level=2] [ref=e29]
+          - generic [ref=e30]:
+            - generic [ref=e31]: payment processing
+            - generic [ref=e32]:
+              - img [ref=e33]
+              - generic [ref=e36]: Listo
+        - generic [ref=e37]:
+          - generic [ref=e39]:
+            - img [ref=e40]
+            - text: 8 Listos
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: Cuenta Total
+            - paragraph [ref=e44]: $21.500
+            - generic [ref=e48]:
+              - generic [ref=e49]: Progreso
+              - generic [ref=e50]: 56%
+        - generic [ref=e51]:
+          - button "Nueva Orden" [ref=e52]:
+            - img [ref=e53]
+            - text: Nueva Orden
+          - button "Rotar Mesa" [ref=e54]:
+            - img [ref=e55]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: Identificador
+            - heading "Mesa 2" [level=2] [ref=e65]
+          - generic [ref=e67]: active
+        - generic [ref=e69]:
+          - paragraph [ref=e70]: Cuenta Total
+          - paragraph [ref=e71]: $0
+          - generic [ref=e74]:
+            - generic [ref=e75]: Progreso
+            - generic [ref=e76]: 0%
+        - generic [ref=e77]:
+          - button "Nueva Orden" [ref=e78]:
+            - img [ref=e79]
+            - text: Nueva Orden
+          - button "Rotar Mesa" [ref=e80]:
+            - img [ref=e81]
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - paragraph [ref=e90]: Identificador
+            - heading "Mesa 3" [level=2] [ref=e91]
+          - generic [ref=e93]: active
+        - generic [ref=e95]:
+          - paragraph [ref=e96]: Cuenta Total
+          - paragraph [ref=e97]: $0
+          - generic [ref=e100]:
+            - generic [ref=e101]: Progreso
+            - generic [ref=e102]: 0%
+        - generic [ref=e103]:
+          - button "Nueva Orden" [ref=e104]:
+            - img [ref=e105]
+            - text: Nueva Orden
+          - button "Rotar Mesa" [ref=e106]:
+            - img [ref=e107]
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: Identificador
+            - heading "Mesa 4" [level=2] [ref=e117]
+          - generic [ref=e119]: active
+        - generic [ref=e121]:
+          - paragraph [ref=e122]: Cuenta Total
+          - paragraph [ref=e123]: $0
+          - generic [ref=e126]:
+            - generic [ref=e127]: Progreso
+            - generic [ref=e128]: 0%
+        - generic [ref=e129]:
+          - button "Nueva Orden" [ref=e130]:
+            - img [ref=e131]
+            - text: Nueva Orden
+          - button "Rotar Mesa" [ref=e132]:
+            - img [ref=e133]
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - paragraph [ref=e142]: Identificador
+            - heading "Mesa 5" [level=2] [ref=e143]
+          - generic [ref=e145]: active
+        - generic [ref=e147]:
+          - paragraph [ref=e148]: Cuenta Total
+          - paragraph [ref=e149]: $0
+          - generic [ref=e152]:
+            - generic [ref=e153]: Progreso
+            - generic [ref=e154]: 0%
+        - generic [ref=e155]:
+          - button "Nueva Orden" [ref=e156]:
+            - img [ref=e157]
+            - text: Nueva Orden
+          - button "Rotar Mesa" [ref=e158]:
+            - img [ref=e159]
+  - button "Open Next.js Dev Tools" [ref=e169] [cursor=pointer]:
+    - img [ref=e170]
+  - alert [ref=e173]
+```

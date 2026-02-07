@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "rest-bill-splitter-api",
+		"name": "Jazz Club API (Supabase)",
+		"description": "Collection to interact with the Bill Splitter REST API via PostgREST (Supabase).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sessions",
+			"item": [
+				{
+					"name": "Get All Active Sessions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{ "key": "apikey", "value": "{{SUPABASE_ANON_KEY}}", "type": "text" },
+							{ "key": "Authorization", "value": "Bearer {{SUPABASE_ANON_KEY}}", "type": "text" }
+						],
+						"url": {
+							"raw": "{{SUPABASE_URL}}/rest/v1/sessions?status=neq.closed",
+							"host": ["{{SUPABASE_URL}}"],
+							"path": ["rest", "v1", "sessions"],
+							"query": [{ "key": "status", "value": "neq.closed" }]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Order Items",
+			"item": [
+				{
+					"name": "Get Items for Session",
+					"request": {
+						"method": "GET",
+						"header": [
+							{ "key": "apikey", "value": "{{SUPABASE_ANON_KEY}}", "type": "text" },
+							{ "key": "Authorization", "value": "Bearer {{SUPABASE_ANON_KEY}}", "type": "text" }
+						],
+						"url": {
+							"raw": "{{SUPABASE_URL}}/rest/v1/order_items?session_id=eq.{{ACTIVE_SESSION_ID}}",
+							"host": ["{{SUPABASE_URL}}"],
+							"path": ["rest", "v1", "order_items"],
+							"query": [{ "key": "session_id", "value": "eq.{{ACTIVE_SESSION_ID}}" }]
+						}
+					}
+				},
+				{
+					"name": "Update Kitchen Status",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{ "key": "apikey", "value": "{{SUPABASE_ANON_KEY}}", "type": "text" },
+							{ "key": "Authorization", "value": "Bearer {{SUPABASE_ANON_KEY}}", "type": "text" },
+							{ "key": "Content-Type", "value": "application/json", "type": "text" }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"kitchen_status\": \"ready\"\n}"
+						},
+						"url": {
+							"raw": "{{SUPABASE_URL}}/rest/v1/order_items?id=eq.{{ITEM_ID}}",
+							"host": ["{{SUPABASE_URL}}"],
+							"path": ["rest", "v1", "order_items"],
+							"query": [{ "key": "id", "value": "eq.{{ITEM_ID}}" }]
+						}
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": { "type": "text/javascript", "exec": [""] }
+		}
+	],
+	"variable": [
+		{ "key": "SUPABASE_URL", "value": "YOUR_PROJECT_URL", "type": "string" },
+		{ "key": "SUPABASE_ANON_KEY", "value": "YOUR_ANON_KEY", "type": "string" },
+		{ "key": "ACTIVE_SESSION_ID", "value": "", "type": "string" },
+		{ "key": "ITEM_ID", "value": "", "type": "string" }
+	]
+}
