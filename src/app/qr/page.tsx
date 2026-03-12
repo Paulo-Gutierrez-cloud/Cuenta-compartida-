@@ -30,7 +30,7 @@ function QRContent() {
         const fetchTables = async () => {
             const { data } = await supabase
                 .from('sessions')
-                .select('*')
+                .select('id, table_number, total_amount, status')
                 .neq('status', 'closed')
                 .order('table_number');
 
@@ -48,8 +48,7 @@ function QRContent() {
         fetchTables();
     }, [selectedMesa]);
 
-    // UPDATE with your local IP
-    const BASE_URL = "http://192.168.1.16:3000";
+    const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000');
 
     if (!selectedTable) return (
         <div className="flex flex-col items-center justify-center min-h-[60vh] text-center space-y-4">

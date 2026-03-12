@@ -29,12 +29,12 @@ export function useRealtimeBill(tableId: string = DEMO_TABLE_ID, initialItems?: 
                 const [itemsResult, usersResult] = await Promise.all([
                     supabase
                         .from('order_items')
-                        .select('*')
+                        .select('id, name, price, status, kitchen_status, paid_by, split_type, payment_method, tip_amount')
                         .eq('session_id', tableId)
                         .order('name'),
                     supabase
                         .from('table_users')
-                        .select('*')
+                        .select('id, name, status, is_virtual')
                         .eq('session_id', tableId)
                 ]);
 

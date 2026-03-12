@@ -71,11 +71,25 @@ export default function CashierPage() {
     const [lastClosingTime, setLastClosingTime] = useState<Date | null>(null);
 
     useEffect(() => {
-        setLastClosingTime(new Date(new Date().setHours(0, 0, 0, 0)));
+        // Load last closing time from DB, fallback to start of today
+        const loadLastClosing = async () => {
+            const { data } = await supabase
+                .from('cash_closings')
+                .select('closed_at')
+                .order('closed_at', { ascending: false })
+                .limit(1);
+
+            if (data && data.length > 0) {
+                setLastClosingTime(new Date(data[0].closed_at));
+            } else {
+                setLastClosingTime(new Date(new Date().setHours(0, 0, 0, 0)));
+            }
+        };
+        loadLastClosing();
     }, []);
 
     const fetchSalesData = useCallback(async () => {
-        console.log("Fetching sales data... lastClosingTime:", lastClosingTime);
+
         if (!lastClosingTime) return;
         setIsLoading(true);
         try {
@@ -84,7 +98,7 @@ export default function CashierPage() {
                 .from('order_items')
                 .select('price, payment_method, tip_amount, session_id')
                 .eq('status', 'paid');
-                // .gte('created_at', lastClosingTime.toISOString());
+
 
             if (error) throw error;
 
@@ -110,12 +124,12 @@ export default function CashierPage() {
             });
 
             setSalesData(sales);
-            console.log("Sales data fetched successfully:", sales);
+
 
             // Fetch closing history
             const { data: closings, error: closingsError } = await supabase
                 .from('cash_closings')
-                .select('*')
+                .select('id, closed_at, opened_at, closing_type, total_sales, cash_amount, card_amount, mercadopago_amount, tips_total, orders_count, items_count, notes, closed_by')
                 .order('closed_at', { ascending: false })
                 .limit(10);
 
