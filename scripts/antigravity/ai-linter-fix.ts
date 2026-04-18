@@ -9,8 +9,8 @@ async function runAutoFix() {
         execSync('npm run lint', { stdio: 'pipe' });
         console.log('[AI-Fix] No lint errors found! ✨');
         return;
-    } catch (error) {
-        lintOutput = error.stdout.toString() || error.stderr.toString();
+    } catch (error: any) {
+        lintOutput = error.stdout?.toString() || error.stderr?.toString() || String(error);
         console.log('[AI-Fix] Issues detected. Sending to Antigravity Agent...');
     }
 
