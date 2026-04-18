@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { formatCurrency, cn } from "@/lib/utils";
-import { LayoutDashboard, QrCode, RefreshCw, Plus, X, ChefHat, Bell, Flame, Check, UserPlus, Receipt, Eye, CreditCard, Banknote, Smartphone, ShoppingBag, Minimize2, Maximize2, Package, Sun, Wine, Home, Crown, MapPin } from "lucide-react";
+import { LayoutDashboard, QrCode, RefreshCw, Plus, X, ChefHat, Bell, Flame, Check, UserPlus, Receipt, Eye, CreditCard, Banknote, Smartphone, ShoppingBag, Minimize2, Maximize2, Package, Sun, Wine, Home, Crown, MapPin, List } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { UserAvatars, User } from "@/components/ui/user-avatars";
@@ -72,8 +72,8 @@ export default function DashboardPage() {
     // Detail Modal State
     const [detailTable, setDetailTable] = useState<Session | null>(null);
 
-    // Card Size State
-    const [cardSize, setCardSize] = useState<'compact' | 'normal' | 'expanded'>('normal');
+    // Card Size State (Fixed to compact by user request)
+    const [cardSize, setCardSize] = useState<'compact' | 'normal' | 'expanded'>('compact');
 
     // Sector Filter
     const [activeSector, setActiveSector] = useState('Todos');
@@ -318,11 +318,12 @@ export default function DashboardPage() {
                     <Link href="/qr" className="flex-1 md:flex-none bg-black text-white px-6 py-3 rounded-2xl text-sm font-black flex items-center justify-center gap-2 hover:bg-black/80 transition-all shadow-lg shadow-black/10">
                         <QrCode size={18} /> MESA QRS
                     </Link>
-                    <div className="flex bg-gray-100 rounded-2xl p-1 gap-1">
-                        <button onClick={() => setCardSize('compact')} className={cn("p-3 rounded-xl transition-all", cardSize === 'compact' ? "bg-white shadow-sm text-black" : "text-gray-400 hover:text-gray-600")} title="Compacto"><Minimize2 size={16} /></button>
-                        <button onClick={() => setCardSize('normal')} className={cn("p-3 rounded-xl transition-all", cardSize === 'normal' ? "bg-white shadow-sm text-black" : "text-gray-400 hover:text-gray-600")} title="Normal"><Package size={16} /></button>
-                        <button onClick={() => setCardSize('expanded')} className={cn("p-3 rounded-xl transition-all", cardSize === 'expanded' ? "bg-white shadow-sm text-black" : "text-gray-400 hover:text-gray-600")} title="Expandido"><Maximize2 size={16} /></button>
-                    </div>
+                    <Link href="/dashboard/inventory" className="flex-1 md:flex-none bg-white border-2 border-slate-900 text-slate-900 px-6 py-3 rounded-2xl text-sm font-black flex items-center justify-center gap-2 hover:bg-slate-50 transition-all">
+                        <Package size={18} /> INVENTARIO
+                    </Link>
+                    <Link href="/dashboard/audit" className="flex-1 md:flex-none bg-slate-100 text-slate-600 px-6 py-3 rounded-2xl text-sm font-black flex items-center justify-center gap-2 hover:bg-slate-200 transition-all">
+                        <List size={18} /> LOGS
+                    </Link>
                 </div>
             </header>
 

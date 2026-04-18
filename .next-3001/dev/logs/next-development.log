@@ -1,0 +1,771 @@
+[00:00:25.921] Server  LOG     ✓ Ready in 22.6s
+[00:00:28.960] Server  LOG     ○ Compiling / ...
+[00:04:31.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:40.339] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:39.828] Server  LOG     ✓ Compiled in 1959ms
+[00:18:42.525] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:57.632] Server  LOG     ✓ Compiled in 1503ms
+[00:19:00.220] Server  LOG     ✓ Compiled in 1260ms
+[00:19:00.220] Browser ERROR   uncaughtError: ReferenceError: List is not defined
+[00:19:00.262] Server  ERROR   ⨯ ReferenceError: List is not defined
+[00:19:00.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:00.928] Browser ERROR   uncaughtError: ReferenceError: List is not defined
+[00:19:08.364] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:19:09.726] Server  LOG     ✓ Compiled in 1725ms
+[00:19:09.726] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:19:09.727] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:19:09.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:42.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:52.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:31.055] Server  LOG     ✓ Compiled in 2.9s
+[00:25:33.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:18.948] Server  LOG     ✓ Compiled in 1982ms
+[00:27:19.915] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:19.915] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:32.916] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:32.916] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:37.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:37.314] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:37.315] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/waiter" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:27:37.315] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:37.921] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:37.921] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:44.452] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:44.622] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:44.622] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/waiter" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:27:44.622] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:44.919] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:44.919] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:45.170] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:45.344] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:45.344] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/waiter" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:27:45.344] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:45.645] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:45.645] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:46.210] Server  ERROR   ⨯ ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+
+[00:27:46.328] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:46.914] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:47.548] Server  ERROR   ⨯ ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+
+[00:27:49.236] Server  LOG     ○ Compiling /_error ...
+[00:27:50.351] Server  ERROR   ⨯ ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+
+[00:27:50.588] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:50.713] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:50.713] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/waiter" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="es">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:27:51.308] Server  ERROR   ⨯ ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+
+[00:27:54.445] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:54.922] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:59.922] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:27:59.922] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:28:46.943] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:28:46.943] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:28:46.943] Browser ERROR   ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+[00:28:47.208] Browser ERROR   uncaughtError: Error: ./src/app/dashboard/inventory/page.tsx:85:2
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     );
+> 85 | }
+     |  ^
+  86 |
+
+Expected ',', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/inventory/page.tsx [Client Component Browser]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/inventory/page.tsx [Client Component SSR]
+    ./src/app/dashboard/inventory/page.tsx [Server Component]
+
+
+[00:28:47.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:51.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:57.548] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:58.273] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:09.991] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:16.940] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:17.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:47.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:57.675] Server  LOG     ✓ Compiled in 2.1s
+[00:31:14.197] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:14.322] Browser LOG     Fetching inventory items...
+[00:31:20.448] Browser ERROR   Error fetching items: {"code":"PGRST205","details":null,"hint":"Perhaps you meant the table 'public.order_items'","message":"Could not find the table 'public.inventory_items' in the schema cache"}
+[00:31:22.028] Browser LOG     Seeding data...
+[00:31:29.759] Browser ERROR   Seed error: {"code":"PGRST205","details":null,"hint":"Perhaps you meant the table 'public.order_items'","message":"Could not find the table 'public.inventory_items' in the schema cache"}
+[00:33:00.846] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:01.955] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:01.955] Browser LOG     Fetching inventory items...
+[00:33:02.236] Browser LOG     Items fetched: []
+[00:33:02.858] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:02.988] Browser LOG     Fetching inventory items...
+[00:33:03.186] Browser LOG     Items fetched: []
+[00:33:03.559] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:03.690] Browser LOG     Fetching inventory items...
+[00:33:03.861] Browser LOG     Items fetched: []
+[00:33:04.171] Browser LOG     Seeding data...
+[00:33:05.734] Browser LOG     Fetching inventory items...
+[00:33:05.923] Browser LOG     Items fetched: [{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"5c82b619-207e-4c36-a951-35dbdf01c725","min_stock_alert":5,"name":"Carne de Res","stock_quantity":30,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"49f84780-ad98-47fb-9d2d-183e0fc389b6","min_stock_alert":5,"name":"Harina","stock_quantity":50,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"29c72e16-426e-4a11-9ce7-fe38a796a48e","min_stock_alert":10,"name":"Pan Artesanal","stock_quantity":100,"unit":"units"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"e5d17ab4-a66e-4c6b-a6be-806c09c7bfe2","min_stock_alert":1,"name":"Queso Mascarpone","stock_quantity":8,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"27d6c29c-8970-4864-b545-87679b1a65ae","min_stock_alert":2,"name":"Queso Mozzarella","stock_quantity":20,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"6c4b535b-7b7e-456b-a5fc-f31425af6903","min_stock_alert":3,"name":"Salsa de Tomate","stock_quantity":15,"unit":"kg"}]
+[00:34:24.180] Browser LOG     Fetching inventory items...
+[00:34:24.180] Browser LOG     Fetching inventory items...
+[00:34:24.385] Browser LOG     Items fetched: [{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"5c82b619-207e-4c36-a951-35dbdf01c725","min_stock_alert":5,"name":"Carne de Res","stock_quantity":30,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"49f84780-ad98-47fb-9d2d-183e0fc389b6","min_stock_alert":5,"name":"Harina","stock_quantity":50,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"29c72e16-426e-4a11-9ce7-fe38a796a48e","min_stock_alert":10,"name":"Pan Artesanal","stock_quantity":100,"unit":"units"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"e5d17ab4-a66e-4c6b-a6be-806c09c7bfe2","min_stock_alert":1,"name":"Queso Mascarpone","stock_quantity":8,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"27d6c29c-8970-4864-b545-87679b1a65ae","min_stock_alert":2,"name":"Queso Mozzarella","stock_quantity":20,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"6c4b535b-7b7e-456b-a5fc-f31425af6903","min_stock_alert":3,"name":"Salsa de Tomate","stock_quantity":15,"unit":"kg"}]
+[00:34:24.556] Browser LOG     Items fetched: [{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"5c82b619-207e-4c36-a951-35dbdf01c725","min_stock_alert":5,"name":"Carne de Res","stock_quantity":30,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"49f84780-ad98-47fb-9d2d-183e0fc389b6","min_stock_alert":5,"name":"Harina","stock_quantity":50,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"29c72e16-426e-4a11-9ce7-fe38a796a48e","min_stock_alert":10,"name":"Pan Artesanal","stock_quantity":100,"unit":"units"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"e5d17ab4-a66e-4c6b-a6be-806c09c7bfe2","min_stock_alert":1,"name":"Queso Mascarpone","stock_quantity":8,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"27d6c29c-8970-4864-b545-87679b1a65ae","min_stock_alert":2,"name":"Queso Mozzarella","stock_quantity":20,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"6c4b535b-7b7e-456b-a5fc-f31425af6903","min_stock_alert":3,"name":"Salsa de Tomate","stock_quantity":15,"unit":"kg"}]
+[00:35:15.429] Server  LOG     ✓ Compiled in 1988ms
+[00:39:02.945] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:03.083] Browser LOG     Fetching inventory items...
+[00:39:03.544] Browser LOG     Items fetched: [{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"5c82b619-207e-4c36-a951-35dbdf01c725","min_stock_alert":5,"name":"Carne de Res","stock_quantity":30,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"49f84780-ad98-47fb-9d2d-183e0fc389b6","min_stock_alert":5,"name":"Harina","stock_quantity":50,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"29c72e16-426e-4a11-9ce7-fe38a796a48e","min_stock_alert":10,"name":"Pan Artesanal","stock_quantity":100,"unit":"units"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"e5d17ab4-a66e-4c6b-a6be-806c09c7bfe2","min_stock_alert":1,"name":"Queso Mascarpone","stock_quantity":8,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"27d6c29c-8970-4864-b545-87679b1a65ae","min_stock_alert":2,"name":"Queso Mozzarella","stock_quantity":20,"unit":"kg"},{"created_at":"2026-03-26T19:54:22.689345+00:00","id":"6c4b535b-7b7e-456b-a5fc-f31425af6903","min_stock_alert":3,"name":"Salsa de Tomate","stock_quantity":15,"unit":"kg"}]
+[00:39:09.424] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
